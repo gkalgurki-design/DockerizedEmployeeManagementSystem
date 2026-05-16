@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    color: white;
+    padding: 35px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 15px 18px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: #f8fafc;
+    color: #111827;
+}
+
+input:focus {
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.45);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #06b6d4, #2563eb);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.4);
+}
+
+.view-btn {
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    margin-bottom: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: #1f2937;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: linear-gradient(90deg, #2563eb, #0284c7);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+    background: #f1f5f9;
+}
+
+.edit-btn {
+    width: auto;
+    background: #facc15;
+    color: #1f2937;
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.edit-btn:hover {
+    background: #eab308;
+    box-shadow: none;
+}
+
+.delete-btn {
+    width: auto;
+    background: #ef4444;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+# Java / Maven
+target/
+*.jar
+*.war
+*.ear
+
+# Logs
+logs/
+*.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# Docker temporary files
+*.pid
+
+# Node modules if added later
+node_modules/

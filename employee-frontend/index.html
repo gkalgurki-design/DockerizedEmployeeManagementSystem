@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Employee Management System</h1>
+        <p class="subtitle">Dockerized Employee Management System using DevOps</p>
+
+        <div class="card">
+            <h2 id="formTitle">Add Employee</h2>
+
+            <!-- Hidden ID for update -->
+            <input type="hidden" id="employeeId">
+
+            <input type="text" id="name" placeholder="Enter employee name">
+            <input type="email" id="email" placeholder="Enter email">
+            <input type="text" id="department" placeholder="Enter department">
+            <input type="number" id="salary" placeholder="Enter salary">
+
+            <button id="submitBtn" onclick="addEmployee()">Add Employee</button>
+        </div>
+
+        <div class="card">
+            <h2>Employee List</h2>
+
+            <button class="view-btn" onclick="getEmployees()">View Employees</button>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="employeeTable">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
